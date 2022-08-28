@@ -1,0 +1,28 @@
+[
+   {
+      "name":"apache",
+      "image":"ivanp93docker/apache-custom-image1",
+      "memory":512,
+      "links":[
+
+      ],
+      "portMappings":[
+         {
+            "hostPort":80,
+            "containerPort":80,
+            "protocol":"tcp"
+         }
+      ],
+      "essential":true,
+      "mountPoints":[
+        {
+          "sourceVolume":"shared",
+          "containerPath":"/var/www/html",
+          "readOnly": false
+        }
+      ],
+      "volumesFrom":[
+
+      ]
+   }
+]
