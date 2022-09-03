@@ -7,7 +7,7 @@ variable "instance_type" {
 variable "instance_name" {
   description = "name"
   type        = string
-  default     = "apache-host"
+  default     = "proxy"
 }
 
 # variable "ami-id" {
