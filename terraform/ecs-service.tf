@@ -11,8 +11,8 @@ resource "aws_ecs_service" "apache" {
 
   load_balancer {
     target_group_arn = aws_lb_target_group.apache.arn
-    container_name   = "apache"
-    container_port   = 80
+    container_name   = "sampleapp"
+    container_port   = 5005
   }
 
   placement_constraints {

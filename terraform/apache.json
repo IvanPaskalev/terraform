@@ -1,15 +1,15 @@
 [
    {
-      "name":"apache",
-      "image":"ivanp93docker/apache-custom-image1",
+      "name":"sampleapp",
+      "image":"833366142445.dkr.ecr.eu-central-1.amazonaws.com/sampleapp:latest",
       "memory":512,
       "links":[
 
       ],
       "portMappings":[
          {
-            "hostPort":80,
-            "containerPort":80,
+            "hostPort":0,
+            "containerPort":5005,
             "protocol":"tcp"
          }
       ],

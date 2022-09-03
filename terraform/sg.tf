@@ -13,8 +13,8 @@ resource "aws_security_group" "http_ssh" {
 
   ingress {
     description      = "HTTP from all"
-    from_port        = 80
-    to_port          = 80
+    from_port        = 32768
+    to_port          = 65535
     protocol         = "tcp"
     security_groups = [aws_security_group.lb-sgroup.id]
   }
